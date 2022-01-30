@@ -1,0 +1,107 @@
+body {
+  font-family: "News Cycle", sans-serif;
+}
+
+.btn{
+  background: #FD2955;
+  /*! line-height: 3rem; */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  padding: 5px 30px;
+}
+.btn:hover{
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(255,255,157,0.4);
+  color:#0a183d;
+  transform: translateY(-7px);
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #020B1B;
+}
+/* header */
+.main-header {
+  width: 100vw;
+  line-height: 0rem;
+  background-color: #020B1B;
+}
+.navbar-brand{
+  color: #fff;
+  animation: music 1s linear infinite;
+  animation-direction: alternate;
+}
+.fas{
+  font-size: 4rem;
+}
+.navbar-brand:hover{
+  color: #FD2955;
+  filter: drop-shadow(0 1.5rem rgba(255,255,255,0.1));
+}
+@keyframes music{
+from{
+  transform: rotate(5deg);
+}
+to{
+  transform: rotate(-5deg);
+}
+}
+
+.nav-item .nav-link{
+  font-size: 17px;
+  color: #FD2955;
+  text-transform: uppercase;
+  padding-right: 3rem;
+  
+}
+/* header-hero */
+.hero-area{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+
+}
+.header-hero{
+  width: 100%;
+  height: 80vh;
+  background: #06173A;
+}
+.header-hero-text {
+	margin-top: 100px;
+}
+.header-hero-text h2 {
+	color: #fff;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+.header-hero-text p {
+	color: #fff;
+	margin-bottom: 48px;
+}
+.hero-img {
+	margin-top: 100px;
+}
+.hero-img img{
+  animation:anime_hero 10s linear infinite alternate;
+  
+}
+@keyframes anime_hero{
+  from{
+    transform: scale(0.9);
+  }
+  to{
+    transform: scale(1.1);
+  }
+  }
+  .unlimited-area{
+    /* position: fixed; */
+    width: 100%; 
+    height: 100%;
+  }
